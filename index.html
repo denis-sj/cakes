@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cakes</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="overflow-x-hidden margin:0">
+    <div
+      class="bg-[url('../assets/image/background.jpg')] bg-cover bg-no-repeat min-h-screen"
+    >
+      <header class="h-20 flex justify-between items-center">
+        <a class="w-[65%] flex justify-center font-medium text-white"
+          >Сладкий сундук</a
+        >
+        <div class="h-full flex w-full justify-center gap-10">
+          <div class="flex items-center gap-2">
+            <img class="w-5 h-5" src="./assets/icon/geo.svg" alt="geo" />
+            <p class="text-white text-xs">
+              г. Санкт Петербург, <br />ул. Куйбышева 31
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img class="w-5 h-5" src="./assets/icon/phone.svg" alt="phone" />
+            <div>
+              <p class="text-white text-base font-bold">8 (812) 844-95-49</p>
+              <p class="text-white text-xs">Ежедневно с 9:00 до 20:00</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="h-[calc(100vh-80px)] w-1/2 grid place-items-end">
+        <div class="flex justify-center h-full w-120 flex-col gap-4">
+          <div>
+            <button disabled class="bg-[#F2F6FA] px-4 py-2 rounded-lg">
+              ВКУСНЕЙШИЕ
+            </button>
+          </div>
+          <div>
+            <p class="text-4xl text-white font-bold">
+              Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу
+            </p>
+          </div>
+          <div>
+            <p class="text-[#FFFFFF] font-normal text-xl">
+              Приготовим за 3 часа в день заказа.<br />Доставка на авто в
+              холодильнике.
+            </p>
+          </div>
+          <div class="flex">
+            <button
+              type="button"
+              class="px-7 py-6 rounded-lg bg-[#FED84C] text-[#2E363E] cursor-pointer"
+            >
+              Перейти в каталог
+            </button>
+            <div class="flex items-center pl-5">
+              <p class="text-[#FFFFFF]">9 различных<br />видов на выбор</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--CATALOG -->
+    <section class="w-full flex justify-center">
+      <div class="max-w-[1180px] flex flex-col items-center">
+        <div class="text-center text-4xl">
+          <h1>Для любых событий и дорогих вам людей</h1>
+        </div>
+
+        <!-- product -->
+        <div class="flex justify-center pt-20">
+          <div class="grid grid-cols-[repeat(3,380px)] grid-rows-3 gap-5">
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake1.jpg"
+                alt="cupcake_1"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Кремовый замок</h3>
+                  <p class="text-[16px]">
+                    Нежный крем любого цвета на выбор, вафельная основа
+                  </p>
+                  <p class="text-xl font-medium">1500000 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake2.jpg"
+                alt="cupcake_2"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Малиновый рай</h3>
+                  <p class="text-[16px]">
+                    Воздушный крем, темная основа и ягода малины
+                  </p>
+                  <p class="text-xl font-medium">1200000 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake3.jpg"
+                alt="cupcake_3"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Фейерверк</h3>
+                  <p class="text-[16px]">
+                    Разноцветные крем, с бисквитной основой
+                  </p>
+                  <p class="text-xl font-medium">1500000 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake4.jpg"
+                alt="cupcake_4"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Шоколадный мир</h3>
+                  <p class="text-[16px]">
+                    Ореховая стружка, нежный крем и шоколадная основа
+                  </p>
+                  <p class="text-xl font-medium">10410 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake5.jpg"
+                alt="cupcake_5"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Слезы дракона</h3>
+                  <p class="text-[16px]">
+                    Нежный крем любого цвета на выбор, вафельная основа
+                  </p>
+                  <p class="text-xl font-medium">17120 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake6.jpg"
+                alt="cupcake_6"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Летняя фантазия</h3>
+                  <p class="text-[16px]">
+                    Украшения в форме сердец, для любимого человека
+                  </p>
+                  <p class="text-xl font-medium">1120 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake7.jpg"
+                alt="cupcake_7"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Мыс безумия</h3>
+                  <p class="text-[16px]">
+                    Разноцветная основа, стружка и нежный крем
+                  </p>
+                  <p class="text-xl font-medium">20000 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake8.jpg"
+                alt="cupcake_8"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Облачная сказка</h3>
+                  <p class="text-[16px]">
+                    Светлая основа, нежный крем со стружкой сверху
+                  </p>
+                  <p class="text-xl font-medium">13000 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[582px] flex flex-col">
+              <img
+                src="./assets/image/cupcake/cupcake9.jpg"
+                alt="cupcake_9"
+                class="h-[245px] object-cover rounded-lg"
+              />
+              <div class="flex justify-center">
+                <div class="max-w-80 pt-7 flex flex-col gap-5">
+                  <h3 class="text-2xl w-full font-semibold">Темный рыцарь</h3>
+                  <p class="text-[16px]">
+                    Тёмная основа, нежный крем и вкусные шарики
+                  </p>
+                  <p class="text-xl font-medium">250000 ₽/шт.</p>
+                  <button
+                    class="max-w-[163px] h-[68px] cursor-pointer bg-[#FED84C] text-lg rounded-lg"
+                    type="button"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute -bottom-100 left-0">
+          <img
+            src="./assets/image/berry.png"
+            alt="berry"
+            class="w-35 h-35 rotate-300 blur-xs"
+          />
+        </div>
+
+        <div class="absolute right-0 -bottom-300">
+          <img
+            src="./assets//image/leaf.png"
+            alt="leaf"
+            class="w-35 h-35 rotate-180 blur-xs"
+          />
+        </div>
+
+        <div class="absolute left-0 -bottom-370 rotate-260">
+          <img
+            src="./assets//image/leaf.png"
+            alt="leaf"
+            class="w-35 h-35 rotate-180 blur-xs"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- feedback -->
+    <section class="bg-[#081130] relative">
+      <img src="./assets/image/sky.png" class="rotate-180" alt="sky" />
+
+      <div class="flex">
+        <div class="max-w-1/2">
+          <img src="./assets/image/iphone.png" alt="iphone" />
+        </div>
+
+        <div class="max-w-1/2">
+          <div class="flex flex-col pl-16 max-w-[481px] gap-6">
+            <div>
+              <button
+                type="button"
+                class="px-5 py-1 bg-[#F2F6FA] rounded-lg text-center cursor-pointer"
+              >
+                <span class="text-[#2E363E] text-[11px]"
+                  >НЕ НАШЛИ ТО ЧТО НУЖНО?</span
+                >
+              </button>
+            </div>
+
+            <div class="max-w-[500px] flex flex-col gap-6">
+              <h2 class="text-4xl text-[#FFFFFF] font-medium">
+                Приготовим заказ любой сложности по фото или эскизу
+              </h2>
+              <p class="text-xl text-[#FFFFFF] font-light">
+                Загрузите фотографию или эскиз капкейков и мы рассчитаем
+                стоимость за 30 минут
+              </p>
+            </div>
+
+            <div class="z-10">
+              <button
+                class="px-8 py-5 rounded-lg bg-[#FED84C] cursor-pointer"
+                type="button"
+              >
+                <span class="text-[#2E363E] font-medium"
+                  >Загрузить фотографию</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/image/sky.png"
+        class="absolute bottom-0 left-0 max-w-full z-0"
+        alt="sky"
+      />
+    </section>
+
+    <!-- ALL ABSOLUTE -->
+    <div>
+      <div class="absolute bottom-1 left-0">
+        <img
+          src="./assets/image/leaf.png"
+          alt="leaf"
+          class="w-35 h-35 rotate-200 blur-xs"
+        />
+      </div>
+
+      <div class="absolute top-40 -left-10">
+        <img
+          src="./assets/image/berry.png"
+          alt="berry"
+          class="w-35 h-35 rotate-320"
+        />
+      </div>
+
+      <div class="absolute top-20 -right-10">
+        <img
+          src="./assets/image/berry.png"
+          alt="berry"
+          class="w-35 h-35 rotate-20"
+        />
+      </div>
+
+      <div class="absolute right-20 top-50">
+        <img
+          src="./assets/image/berry.png"
+          alt="berry"
+          class="w-35 h-35 rotate-200 blur-xs"
+        />
+      </div>
+
+      <div class="absolute left-70 -bottom--20 rotate-260">
+        <img
+          src="./assets//image/leaf.png"
+          alt="leaf"
+          class="w-20 h-20 rotate-180 blur-xs"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="container">
+  <div class="absolute-items"></div>
+  <header></header>
+  <main></main>
+  <footer></footer>
+</div> -->
