@@ -2,6 +2,63 @@
 
 @layer base {
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@theme {
+  --spacing: 0.25rem /* 4px */;
+}
+
+.container_product {
+  display: flex;
+  flex-direction: column;
+  min-height: 582px;
+
+  img {
+    min-height: 245px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+  }
+}
+.product_contant {
+  display: flex;
+  justify-content: center;
+}
+.div_product {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(var(--spacing) * 80);
+  padding-top: calc(var(--spacing) * 7);
+  gap: calc(var(--spacing) * 5);
+
+  h3 {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  button {
+    max-width: 163px;
+    min-height: 68px;
+    cursor: pointer;
+    background-color: #FED84C;
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+    border-radius: var(--radius-lg);
+  }
+
+  .name {
+    font-size: 16px;
+  }
+  .price {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
 }
